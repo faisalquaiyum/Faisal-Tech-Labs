@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa";
-import "./faq.css";
+import "./Faq.css";
 
 const faqData = [
   {
