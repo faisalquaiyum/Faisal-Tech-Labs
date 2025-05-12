@@ -1,0 +1,315 @@
+/* ======================
+   BASE STYLES & RESET
+   ====================== */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Urbanist, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    color-scheme: light dark;
+  }
+  
+  :root {
+    --bg-color: #eaf4fc;
+    --btn-color: #646cff;
+    --dark-color: #242424;
+    --helper-color: #99b9ff;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    margin: 0;
+    min-height: 100vh;
+  }
+  
+  /* ======================
+     TYPOGRAPHY
+     ====================== */
+  h1 {
+    font-size: 5.4rem;
+    line-height: 1.1;
+    font-weight: bold;
+    margin-bottom: 1.8rem;
+  }
+  
+  p,
+  li,
+  label,
+  input,
+  textarea {
+    font-size: 1.8rem;
+    line-height: 1.56;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.06rem;
+  }
+  
+  a {
+    font-weight: 500;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    color: var(--btn-color);
+    text-decoration: inherit;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  /* ======================
+     LAYOUT & CONTAINERS
+     ====================== */
+  .container {
+    max-width: 140rem;
+    padding: 4rem 2.4rem;
+    margin: 0 auto;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 6.4rem;
+  }
+  
+  .grid-two-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-three-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .grid-four-cols {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  /* ======================
+     COMPONENTS & MODULES
+     ====================== */
+  button {
+    text-transform: capitalize;
+    padding: 1rem 2.2rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: white;
+    background-color: var(--btn-color);
+    border-radius: 0.8rem;
+    border: 0.1rem solid transparent;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+    transition: border-color 0.3s;
+  }
+  
+  .secondary-btn {
+    background-color: transparent;
+    color: var(--btn-color);
+    box-shadow: inset 0 0 0 0.2rem var(--btn-color);
+  }
+  
+  /* ======================
+     STATE & INTERACTIONS
+     ====================== */
+  button:hover {
+    box-shadow: inset 0 0 0 0.2rem var(--bg-color);
+  }
+  
+  .secondary-btn:hover {
+    box-shadow: inset 0 0 0 0.2rem var(--helper-color);
+  }
+  
+  a:hover,
+  a.active {
+    color: #535bf2;
+  }
+  
+  /* ======================
+     FORM STYLES
+     ====================== */
+  .form-container {
+    max-width: 500px;
+    margin: 0;
+    padding: 2rem;
+  }
+  
+  .form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form-container label {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+    display: flex;
+  }
+
+  
+  .form-container input,
+  .form-container textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-container input:focus,
+  .form-container textarea:focus {
+    border-color: #535bf2;
+    outline: none;
+  }
+  
+  .form-container textarea {
+    resize: none;
+  }
+  
+  .form-container .btn-primary {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #535bf2;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-container .btn-primary:hover {
+    background-color: #3a47d5;
+  }
+  
+  /* ======================
+     ADMIN STYLES
+     ====================== */
+  .admin-users-section {
+    padding: 2rem 0;
+    background-color: #f9f9f9;
+  }
+  
+  .admin-users-section h1 {
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .admin-users table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-users table thead {
+    background-color: #535bf2;
+    color: #fff;
+  }
+  
+  .admin-users table td,
+  .admin-users table th {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 1.4rem;
+  }
+  
+  .admin-users table th {
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: #535bf2;
+    color: #fff;
+    cursor: default;
+  }
+  
+  .admin-users table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .admin-users table tr:hover {
+    background-color: #e6e6e6;
+  }
+  
+  .admin-users .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 1.2rem;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .admin-users .btn-update {
+    background-color: #28a745;
+  }
+
+  .admin-users .btn-update:hover {
+    background-color: #218838;
+    box-shadow: inset 0 0 0 0.2rem var(--bg-color);
+  }
+  
+  .admin-users .btn-delete {
+    background-color: #dc3545;
+  }
+  
+  .admin-contacts {
+    padding: 3rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .admin-contacts h1 {
+    font-size: 4.8rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: var(--dark-color);
+  }
+  
+  .contact-table .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 1.4rem;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-table .btn:hover {
+    background-color: #c82333;
+    transform: translateY(-1px);
+  }
+  
+  /* ======================
+     RESPONSIVE ADJUSTMENTS
+     ====================== */
+  @media (max-width: 768px) {
+    .admin-users table th,
+    .admin-users table td {
+      font-size: 1.2rem;
+      padding: 0.8rem;
+    }
+  
+    .admin-users .btn {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+    }
+    
+    .admin-contacts h1 {
+      font-size: 3.6rem;
+    }
+  }

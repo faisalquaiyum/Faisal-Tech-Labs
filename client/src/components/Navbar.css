@@ -1,0 +1,123 @@
+/* Navbar Container */
+.container {
+  max-width: 140rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+  background-color: #eaf4fc;
+  position: relative;
+}
+
+/* Logo */
+.navbar__logo a {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: var(--btn-color);
+  text-decoration: none;
+}
+
+/* Desktop Navigation */
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__links a {
+  font-size: 1.8rem;
+  color: var(--dark-color);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.navbar__links a:hover,
+.navbar__links a.active {
+  color: var(--btn-color);
+}
+
+.navbar__links a.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--btn-color);
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--dark-color);
+  z-index: 1001;
+  padding: 0.5rem;
+}
+
+/* Mobile Menu Styles */
+@media (max-width: 768px) {
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: #eaf4fc;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    padding-top: 8rem;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar.active {
+    right: 0;
+  }
+
+  .navbar__links {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 2rem;
+    gap: 1.5rem;
+  }
+
+  .navbar__links li {
+    width: 100%;
+  }
+
+  .navbar__links a {
+    display: block;
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+}
+
+/* Backdrop */
+.mobile-menu-backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.mobile-menu-backdrop.active {
+  display: block;
+}

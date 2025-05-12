@@ -1,0 +1,154 @@
+/* ======================
+   AI CHAT STYLES
+   ====================== */
+.section-ai {
+  padding: 2rem 0;
+  background-color: var(--bg-color);
+  margin: 2rem 6rem 6rem 6rem; 
+  border-radius: 5px;
+  
+}
+
+.ai-outer-container {
+  max-width: 64rem; 
+  margin: 0 auto;
+  padding: 1.6rem;
+  background-color: white;
+  border-radius: 0.8rem; 
+  box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1); /* Lighter shadow */
+}
+
+.ai-header {
+  text-align: center;
+  margin-bottom: 2rem; 
+}
+
+.ai-icon {
+  font-size: 3.6rem;
+  color: var(--btn-color);
+  margin-bottom: 1rem; 
+}
+
+.ai-header h2 {
+  font-size: 2.4rem; 
+  color: var(--dark-color);
+  margin-bottom: 0.4rem;
+}
+
+.ai-header p {
+  font-size: 1.6rem; 
+  color: #666;
+}
+
+.ai-chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 40rem; 
+  border: 0.1rem solid #e1e1e1;
+  border-radius: 0.6rem; 
+  overflow: hidden;
+}
+
+.ai-messages {
+  flex: 1;
+  padding: 1.6rem;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+}
+
+.ai-welcome-message {
+  padding: 1.2rem; 
+  background-color: white;
+  border-radius: 0.6rem; 
+  margin-bottom: 1.2rem; 
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.05); /* Lighter shadow */
+}
+
+.ai-welcome-message p {
+  font-size: 1.5rem; 
+  color: #444;
+}
+
+.ai-message {
+  margin-bottom: 1.2rem; 
+  display: flex;
+}
+
+.ai-message-content {
+  max-width: 80%;
+  padding: 1rem 1.4rem; 
+  border-radius: 0.6rem; 
+  font-size: 1.5rem; 
+  line-height: 1.4; 
+}
+
+.ai-input-form {
+  display: flex;
+  padding: 1.2rem;
+  background-color: white;
+  border-top: 0.1rem solid #e1e1e1;
+}
+
+.ai-input-form input {
+  flex: 1;
+  padding: 1rem 1.4rem; 
+  font-size: 1.5rem; 
+}
+
+.ai-input-form button {
+  padding: 1rem 2rem; 
+  font-size: 1.5rem; 
+}
+
+/* ======================
+   RESPONSIVE ADJUSTMENTS
+   ====================== */
+@media (max-width: 768px) {
+  .section-ai {
+    padding: 1.6rem 0; 
+  }
+  
+  .ai-outer-container {
+    padding: 1.2rem; 
+  }
+  
+  .ai-header h2 {
+    font-size: 2rem; 
+  }
+  
+  .ai-chat-container {
+    height: 32rem; 
+  }
+  
+  .ai-messages {
+    padding: 1rem; 
+  }
+  
+  .ai-message-content {
+    max-width: 90%;
+    font-size: 1.4rem; 
+    padding: 0.8rem 1rem; 
+  }
+  
+  .ai-input-form {
+    padding: 1rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .ai-outer-container {
+    padding: 1rem;
+  }
+  
+  .ai-icon {
+    font-size: 3rem; 
+  }
+  
+  .ai-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .ai-chat-container {
+    height: 28rem;
+  }
+}

@@ -1,0 +1,59 @@
+
+.grid-three-cols {
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+  gap: 4.8rem; /* Space between grid items */
+}
+
+.section-services .grid {
+  display: grid; 
+  gap: 4.8rem;
+}
+
+.service-card {
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+  background: #f8f9ff; /* Very light blue tint */
+  border-color: #c7d2fe;
+}
+
+.service-card img {
+  width: 350px;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.service-card h2 {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.service-card p {
+  margin-bottom: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .grid-three-cols {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-three-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .grid {
+    grid-template-columns: 1fr; 
+    gap: 0rem; 
+  }
+}
