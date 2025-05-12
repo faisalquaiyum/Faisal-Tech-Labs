@@ -13,7 +13,7 @@ require("dotenv").config(); // Load environment variables from .env file
 // lets tackle cors issue
 const corsOptions = {
   // origin: 'http://localhost:5173', // Replace with your frontend URL
-  origin: "https://faisal-tech-labs.vercel.app/", // Replace with your frontend URL
+  origin: "https://faisal-tech-labs.vercel.app", // Replace with your frontend URL
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true,
 };
