@@ -9,7 +9,7 @@ const AdminUsers = () => {
 
   const getAllUsersData = async () => {
     try {
-      const response = await fetch("http://localhost:5000/admin/users", {
+      const response = await fetch(`${API}/admin/users`, {
         method: "GET",
         headers: {
           Authorization: authorizationToken,

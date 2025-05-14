@@ -18,7 +18,7 @@ const AdminUpdate = () => {
     const getSingleUserData = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/admin/users/${params.id}`,
+          `${API}/admin/users/${params.id}`,
           {
             method: "GET",
             headers: {

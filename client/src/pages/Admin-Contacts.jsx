@@ -8,7 +8,7 @@ const AdminContacts = () => {
 
   const getContactsData = async () => {
     try {
-      const response = await fetch("http://localhost:5000/admin/contacts", {
+      const response = await fetch(`${API}/admin/contacts`, {
         method: "GET",
         headers: {
           Authorization: authorizationToken,
