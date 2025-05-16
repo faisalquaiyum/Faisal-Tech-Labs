@@ -34,10 +34,12 @@
 .service-card h2 {
   font-size: 2rem;
   margin-bottom: 1.2rem;
+  color: var(--dark-color);
 }
 
 .service-card p {
   margin-bottom: 2rem;
+  color: var(--dark-color);
 }
 
 /* Responsive Design */

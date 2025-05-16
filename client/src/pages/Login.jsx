@@ -79,7 +79,7 @@ const Login = () => {
                       type="email"
                       id="email"
                       name="email"
-                      placeholder="enter your email"
+                      placeholder="Enter your email"
                       value={user.email}
                       onChange={handleInput}
                       required
@@ -91,7 +91,7 @@ const Login = () => {
                       type="password"
                       id="password"
                       name="password"
-                      placeholder="enter your password"
+                      placeholder="Enter your password"
                       value={user.password}
                       onChange={handleInput}
                       required

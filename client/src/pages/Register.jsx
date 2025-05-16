@@ -85,7 +85,7 @@ const Register = () => {
                       type="text"
                       id="username"
                       name="username"
-                      placeholder="enter your username"
+                      placeholder="Enter your username"
                       value={user.username}
                       onChange={handleInput}
                       required
@@ -97,7 +97,7 @@ const Register = () => {
                       type="email"
                       id="email"
                       name="email"
-                      placeholder="enter your email"
+                      placeholder="Enter your email"
                       value={user.email}
                       onChange={handleInput}
                       required
@@ -109,7 +109,7 @@ const Register = () => {
                       type="number"
                       id="phone"
                       name="phone"
-                      placeholder="enter your phone"
+                      placeholder="Enter your phone"
                       value={user.phone}
                       onChange={handleInput}
                       required
@@ -121,7 +121,7 @@ const Register = () => {
                       type="password"
                       id="password"
                       name="password"
-                      placeholder="enter your password"
+                      placeholder="Enter your password"
                       value={user.password}
                       onChange={handleInput}
                       required
