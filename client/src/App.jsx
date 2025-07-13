@@ -14,12 +14,14 @@ import AdminLayout from './components/layouts/Admin-Layout'
 import AdminUsers from './pages/Admin-Users'
 import AdminContacts from './pages/Admin-Contacts'
 import AdminUpdate from './pages/Admin-Update'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
 
   return (
     <>
       <BrowserRouter>
+      <ScrollToTop />
       <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

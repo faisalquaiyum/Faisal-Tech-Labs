@@ -16,7 +16,7 @@ const chatWithAI = async (req, res) => {
     const response = await axios.post(
       'https://openrouter.ai/api/v1/chat/completions',
       {
-        model: "openai/gpt-3.5-turbo", // Free model
+        model: "mistralai/mistral-7b-instruct", // Free model
         messages: messages.map(m => ({
           role: m.role,
           content: m.content
